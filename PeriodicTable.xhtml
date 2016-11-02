@@ -1,0 +1,1170 @@
+﻿<!DOCTYPE html[
+<!ENTITY wiki "https://en.wikipedia.org/wiki/">
+]>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Dynamic Periodic Table</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="Styles/PeriodicTable.css" />
+	<script type="text/javascript" src="Scripts/Ext.js"></script>
+	<script type="text/javascript" src="Scripts/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="Scripts/jquery-ui.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.marquee.js"></script>
+	<script type="text/javascript" src="Scripts/PeriodicTable.js"></script>
+</head>
+<body>
+	<main>
+		<div class="cont">
+			<!--<input type="text" value="aaa"/>-->
+			<table>
+				<caption>
+					Periodic Table of Elements
+				</caption>
+				<thead>
+					<tr>
+						<th></th>
+						<th>
+							<small>
+								<samp>1</samp>
+								<samp>1lA</samp>
+								<samp>11A</samp>
+							</small>
+						</th>
+						<td colspan="16"></td>
+						<th>
+							<small>
+								<samp>18</samp>
+								<samp>VlllA</samp>
+								<samp>8A</samp>
+							</small>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>1</th>
+						<td class="element nonmetal">
+							<a class="on-hover" href="&wiki;Hydrogen">
+									<span class="tooltip t-nonmetal">Hydrogen</span>
+									<ruby><rt class="tspan-elem-numb" textContent="1">1</rt><rb class="tspan-elem-abbr" textContent="H">H</rb></ruby>
+									<strong class="tspan-elem-name" textContent="Hydrogen">Hydrogen</strong>
+									<tt class="tspan-elem-mass" textContent="1.008">1.008</tt>
+							</a>
+						</td>
+						<th>
+							<small>
+								<samp>2</samp>
+								<samp>llA</samp>
+								<samp>2A</samp>
+							</small>
+						</th>
+						<td class="element elem-cont-td" colspan="10" rowspan="2">
+							<div id="elem-cont" class="shadow-effect">
+								<svg xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink" width="70%" height="120px">
+									<text>
+										<tspan id="elem-numb" textContent="" x="40%" dy="1.9em">
+										</tspan>
+										<tspan id="elem-abbr" textContent="" x="50%" dy="1em">
+										</tspan>
+										<tspan id="elem-name" textContent="" x="50%" dy="1.1em">
+										</tspan>
+										<tspan id="elem-mass" textContent="" x="50%" dy="1.8em">
+										</tspan>
+									</text>
+								</svg>
+							</div>
+						</td>
+						<th>
+							<small>
+								<samp>13</samp>
+								<samp>lllA</samp>
+								<samp>3A</samp>
+							</small>
+						</th>
+						<th>
+							<small>
+								<samp>14</samp>
+								<samp>lVA</samp>
+								<samp>4A</samp>
+							</small>
+						</th>
+						<th>
+							<small>
+								<samp>15</samp>
+								<samp>VA</samp>
+								<samp>5A</samp>
+							</small>
+						</th>
+						<th>
+							<small>
+								<samp>16</samp>
+								<samp>VlA</samp>
+								<samp>6A</samp>
+							</small>
+						</th>
+						<th>
+							<small>
+								<samp>17</samp>
+								<samp>VllA</samp>
+								<samp>7A</samp>
+							</small>
+						</th>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Helium">
+								<span class="tooltip t-noble">Helium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="2">2</rt><rb class="tspan-elem-abbr" textContent="He">He</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Helium">Helium</strong>
+								<tt class="tspan-elem-mass" textContent="4.002602">4.002602</tt>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<th>2</th>
+						<td class="element alkali">
+							<a class="on-hover" href="&wiki;Lithium">
+								<span class="tooltip t-alkali">Lithium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="3">3</rt><rb class="tspan-elem-abbr" textContent="Li">Li</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Lithium">Lithium</strong>
+								<tt class="tspan-elem-mass" textContent="6.94">6.94</tt>
+							</a>
+						</td>
+						<td class="element alkaline">
+							<a class="on-hover" href="&wiki;Beryllium">
+								<span class="tooltip t-alkaline">Beryllium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="4">4</rt><rb class="tspan-elem-abbr" textContent="Be">Be</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Beryllium">Beryllium</strong>
+								<tt class="tspan-elem-mass" textContent="9.0121831">9.0121831</tt>
+							</a>
+						</td>
+						<td class="element metalloid">
+							<a class="on-hover" href="&wiki;Boron">
+								<span class="tooltip t-metalloid">Boron</span>
+								<ruby><rt class="tspan-elem-numb" textContent="5">5</rt><rb class="tspan-elem-abbr" textContent="B">B</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Boron">Boron</strong>
+								<tt class="tspan-elem-mass" textContent="10.81">10.81</tt>
+							</a>
+						</td>
+						<td class="element nonmetal">
+							<a class="on-hover" href="&wiki;Carbon">
+								<span class="t-nonmetal tooltip">Carbon</span>
+								<ruby><rt class="tspan-elem-numb" textContent="6">6</rt><rb class="tspan-elem-abbr" textContent="C">C</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Carbon">Carbon</strong>
+								<tt class="tspan-elem-mass" textContent="12.011">12.011</tt>
+							</a>
+						</td>
+						<td class="element nonmetal">
+							<a class="on-hover" href="&wiki;Nitrogen">
+								<span class="t-nonmetal tooltip">Nitrogen</span>
+								<ruby><rt class="tspan-elem-numb" textContent="7">7</rt><rb class="tspan-elem-abbr" textContent="N">N</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Nitrogen">Nitrogen</strong>
+								<tt class="tspan-elem-mass" textContent="14.007">14.007</tt>
+							</a>
+						</td>
+						<td class="element nonmetal">
+							<a class="on-hover" href="&wiki;Oxygen">
+								<span class="t-nonmetal tooltip">Oxygen</span>
+								<ruby><rt class="tspan-elem-numb" textContent="8">8</rt><rb class="tspan-elem-abbr" textContent="O">O</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Oxygen">Oxygen</strong>
+								<tt class="tspan-elem-mass" textContent="15.999">15.999</tt>
+							</a>
+						</td>
+						<td class="element halogen">
+							<a class="on-hover" href="&wiki;Fluorine">
+								<span class="tooltip t-halogen">Fluorine</span>
+								<ruby><rt class="tspan-elem-numb" textContent="9">9</rt><rb class="tspan-elem-abbr" textContent="F">F</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Fluorine">Fluorine</strong>
+								<tt class="tspan-elem-mass" textContent="18.998403163">18.998403163</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Neon">
+								<span class="tooltip t-noble">Neon</span>
+								<ruby><rt class="tspan-elem-numb" textContent="10">10</rt><rb class="tspan-elem-abbr" textContent="Ne">Ne</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Neon">Neon</strong>
+								<tt class="tspan-elem-mass" textContent="20.1797">20.1797</tt>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td class="element alkali">
+							<a class="on-hover" href="&wiki;Sodium">
+								<span class="tooltip t-alkali">Sodium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="11">11</rt><rb class="tspan-elem-abbr" textContent="Na">Na</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Sodium">Sodium</strong>
+								<tt class="tspan-elem-mass" textContent="22.98976928">22.98976928</tt>
+							</a>
+						</td>
+						<td class="element alkaline">
+							<a class="on-hover" href="&wiki;Magnesium">
+								<span class="tooltip t-alkaline">Magnesium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="12">12</rt><rb class="tspan-elem-abbr" textContent="Mg">Mg</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Magnesium">Magnesium</strong>
+								<tt class="tspan-elem-mass" textContent="24.305">24.305</tt>
+							</a>
+						</td>
+						<th>
+							<small>
+								<samp>3</samp>
+								<samp>3B</samp>
+								<samp>3</samp>
+							</small>
+						</th>
+						<th>
+							<small>
+								<samp>4</samp>
+								<samp>4B</samp>
+								<samp>3</samp>
+							</small>
+						</th>
+						<th>
+							<small>
+								<samp>5</samp>
+								<samp>5B</samp>
+								<samp>3</samp>
+							</small>
+						</th>
+						<th>
+							<small>
+								<samp>6</samp>
+								<samp>6B</samp>
+								<samp>3</samp>
+							</small>
+						</th>
+						<th>
+							<small>
+								<samp>7</samp>
+								<samp>7B</samp>
+								<samp>3</samp>
+							</small>
+						</th>
+						<th>
+							<small>
+								<samp class="top-samp" rowspan="3">8</samp>
+							</small>
+						</th>
+						<th>
+							<small>
+								<samp>9</samp>
+								<samp>Vlll</samp>
+								<samp>8</samp>
+							</small>
+						</th>
+						<th>
+							<small>
+								<samp class="top-samp">10</samp>
+							</small>
+						</th>
+						<th>
+							<small>
+								<samp>11</samp>
+								<samp>lB</samp>
+								<samp>1B</samp>
+							</small>
+						</th>
+						<th>
+							<small>
+								<samp>12</samp>
+								<samp>llB</samp>
+								<samp>2B</samp>
+							</small>
+						</th>
+						<td class="element poor">
+							<a class="on-hover" href="&wiki;Aluminium">
+								<span class="tooltip t-poor">Aluminium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="13">13</rt><rb class="tspan-elem-abbr" textContent="Al">Al</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Aluminium">Aluminium</strong>
+								<tt class="tspan-elem-mass" textContent="26.9815385">26.9815385</tt>
+							</a>
+						</td>
+						<td class="element metalloid">
+							<a class="on-hover" href="&wiki;Silicon">
+								<span class="tooltip t-metalloid">Silicon</span>
+								<ruby><rt class="tspan-elem-numb" textContent="14">14</rt><rb class="tspan-elem-abbr" textContent="Si">Si</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Silicon">Silicon</strong>
+								<tt class="tspan-elem-mass" textContent="28.085">28.085</tt>
+							</a>
+						</td>
+						<td class="element nonmetal">
+							<a class="on-hover" href="&wiki;Phosphorus">
+								<span class="t-nonmetal tooltip">Phosphorus</span>
+								<ruby><rt class="tspan-elem-numb" textContent="15">15</rt><rb class="tspan-elem-abbr" textContent="P">P</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Phosphorus">Phosphorus</strong>
+								<tt class="tspan-elem-mass" textContent="30.973761998">30.973761998</tt>
+							</a>
+						</td>
+						<td class="element nonmetal">
+							<a class="on-hover" href="&wiki;Sulfur">
+								<span class="t-nonmetal tooltip">Sulfur</span>
+								<ruby><rt class="tspan-elem-numb" textContent="16">16</rt><rb class="tspan-elem-abbr" textContent="S">S</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Sulfur">Sulfur</strong>
+								<tt class="tspan-elem-mass" textContent="32.06">32.06</tt>
+							</a>
+						</td>
+						<td class="element halogen">
+							<a class="on-hover" href="&wiki;Chlorine">
+								<span class="tooltip t-halogen">Chlorine</span>
+								<ruby><rt class="tspan-elem-numb" textContent="17">17</rt><rb class="tspan-elem-abbr" textContent="Cl">Cl</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Chlorine">Chlorine</strong>
+								<tt class="tspan-elem-mass" textContent="35.45">35.45</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Argon">
+								<span class="tooltip t-noble">Argon</span>
+								<ruby><rt class="tspan-elem-numb" textContent="18">18</rt><rb class="tspan-elem-abbr" textContent="Ar">Ar</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Argon">Argon</strong>
+								<tt class="tspan-elem-mass" textContent="39.948">39.948</tt>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<th>4</th>
+						<td class="element alkali">
+							<a class="on-hover" href="&wiki;Potassium">
+								<span class="tooltip t-alkali">Potassium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="19">19</rt><rb class="tspan-elem-abbr" textContent="K">K</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Potassium">Potassium</strong>
+								<tt class="tspan-elem-mass" textContent="39.0983">39.0983</tt>
+							</a>
+						</td>
+						<td class="element alkaline">
+							<a class="on-hover" href="&wiki;Calcium">
+								<span class="tooltip t-alkaline">Calcium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="20">20</rt><rb class="tspan-elem-abbr" textContent="Ca">Ca</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Calcium">Calcium</strong>
+								<tt class="tspan-elem-mass" textContent="40.078">40.078</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Scandium">
+								<span class="tooltip t-transition">Scandium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="21">21</rt><rb class="tspan-elem-abbr" textContent="Sc">Sc</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Scandium">Scandium</strong>
+								<tt class="tspan-elem-mass" textContent="44.955908">44.955908</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Titanium">
+								<span class="tooltip t-transition">Titanium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="22">22</rt><rb class="tspan-elem-abbr" textContent="Ti">Ti</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Titanium">Titanium</strong>
+								<tt class="tspan-elem-mass" textContent="47.867">47.867</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Vanadium">
+								<span class="tooltip t-transition">Vanadium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="23">23</rt><rb class="tspan-elem-abbr" textContent="V">V</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Vanadium">Vanadium</strong>
+								<tt class="tspan-elem-mass" textContent="50.9415">50.9415</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Chromium">
+								<span class="tooltip t-transition">Chromium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="23">24</rt><rb class="tspan-elem-abbr" textContent="Cr">Cr</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Chromium">Chromium</strong>
+								<tt class="tspan-elem-mass" textContent="51.9961">51.9961</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Manganese">
+								<span class="tooltip t-transition">Manganese</span>
+								<ruby><rt class="tspan-elem-numb" textContent="25">25</rt><rb class="tspan-elem-abbr" textContent="Mn">Mn</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Manganese">Manganese</strong>
+								<tt class="tspan-elem-mass" textContent="54.938044">54.938044</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Iron">
+								<span class="tooltip t-transition">Ferrum</span>
+								<ruby><rt class="tspan-elem-numb" textContent="26">26</rt><rb class="tspan-elem-abbr" textContent="Fe">Fe</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Iron">Iron</strong>
+								<tt class="tspan-elem-mass" textContent="55.845">55.845</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Cobalt">
+								<span class="tooltip t-transition">Cobalt</span>
+								<ruby><rt class="tspan-elem-numb" textContent="27">27</rt><rb class="tspan-elem-abbr" textContent="Co">Co</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Cobalt">Cobalt</strong>
+								<tt class="tspan-elem-mass" textContent="58.933194">58.933194</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Nickel">
+								<span class="tooltip t-transition">Nickel</span>
+								<ruby><rt class="tspan-elem-numb" textContent="28">28</rt><rb class="tspan-elem-abbr" textContent="Ni">Ni</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Nickel">Nickel</strong>
+								<tt class="tspan-elem-mass" textContent="58.6934">58.6934</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Copper">
+								<span class="tooltip t-transition">Copper</span>
+								<ruby><rt class="tspan-elem-numb" textContent="29">29</rt><rb class="tspan-elem-abbr" textContent="Cu">Cu</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Copper">Copper</strong>
+								<tt class="tspan-elem-mass" textContent="63.546">63.546</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Zinc">
+								<span class="tooltip t-transition">Zinc</span>
+								<ruby><rt class="tspan-elem-numb" textContent="30">30</rt><rb class="tspan-elem-abbr" textContent="Zn">Zn</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Zinc">Zinc</strong>
+								<tt class="tspan-elem-mass" textContent="65.38">65.38</tt>
+							</a>
+						</td>
+						<td class="element poor">
+							<a class="on-hover" href="&wiki;Gallium">
+								<span class="tooltip t-poor">Gallium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="31">31</rt><rb class="tspan-elem-abbr" textContent="Ga">Ga</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Gallium">Gallium</strong>
+								<tt class="tspan-elem-mass" textContent="69.723">69.723</tt>
+							</a>
+						</td>
+						<td class="element metalloid">
+							<a class="on-hover" href="&wiki;Germanium">
+								<span class="tooltip t-metalloid">Germanium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="32">32</rt><rb class="tspan-elem-abbr" textContent="Ge">Ge</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Germanium">Germanium</strong>
+								<tt class="tspan-elem-mass" textContent="72.63">72.63</tt>
+							</a>
+						</td>
+						<td class="element metalloid">
+							<a class="on-hover" href="&wiki;Arsenic">
+								<span class="tooltip t-metalloid">Arsenic</span>
+								<ruby><rt class="tspan-elem-numb" textContent="33">33</rt><rb class="tspan-elem-abbr" textContent="As">As</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Arsenic">Arsenic</strong>
+								<tt class="tspan-elem-mass" textContent="74.921595">74.921595</tt>
+							</a>
+						</td>
+						<td class="element nonmetal">
+							<a class="on-hover" href="&wiki;Selenium">
+								<span class="t-nonmetal tooltip">Selenium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="34">34</rt><rb class="tspan-elem-abbr" textContent="Se">Se</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Selenium">Selenium</strong>
+								<tt class="tspan-elem-mass" textContent="78.971">78.971</tt>
+							</a>
+						</td>
+						<td class="element halogen">
+							<a class="on-hover" href="&wiki;Bromine">
+								<span class="tooltip t-halogen">Bromine</span>
+								<ruby><rt class="tspan-elem-numb" textContent="35">35</rt><rb class="tspan-elem-abbr" textContent="Br">Br</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Bromine">Bromine</strong>
+								<tt class="tspan-elem-mass" textContent="79.904">79.904</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Krypton">
+								<span class="tooltip t-noble">Krypton</span>
+								<ruby><rt class="tspan-elem-numb" textContent="36">36</rt><rb class="tspan-elem-abbr" textContent="Cr">Cr</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Krypton">Krypton</strong>
+								<tt class="tspan-elem-mass" textContent="83.798">83.798</tt>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<th>5</th>
+						<td class="element alkali">
+							<a class="on-hover" href="&wiki;Rubidium">
+								<span class="tooltip t-alkali">Rubidium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="37">37</rt><rb class="tspan-elem-abbr" textContent="Rb">Rb</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Rubidium">Rubidium</strong>
+								<tt class="tspan-elem-mass" textContent="5.4678">85.4678</tt>
+							</a>
+						</td>
+						<td class="element alkaline">
+							<a class="on-hover" href="&wiki;Strontium">
+								<span class="tooltip t-alkaline">Strontium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="38">38</rt><rb class="tspan-elem-abbr" textContent="Sr">Sr</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Strontium">Strontium</strong>
+								<tt class="tspan-elem-mass" textContent="87.62">87.62</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Yttrium">
+								<span class="tooltip t-transition">Yttrium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="39">39</rt><rb class="tspan-elem-abbr" textContent="Y">Y</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Yttrium">Yttrium</strong>
+								<tt class="tspan-elem-mass" textContent="88.90584">88.90584</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Zirconium">
+								<span class="tooltip t-transition">Zirconium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="40">40</rt><rb class="tspan-elem-abbr" textContent="Zr">Zr</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Zirconium">Zirconium</strong>
+								<tt class="tspan-elem-mass" textContent="91.224">91.224</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Niobium">
+								<span class="tooltip t-transition">Niobium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="41">41</rt><rb class="tspan-elem-abbr" textContent="Nb">Nb</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Niobium">Niobium</strong>
+								<tt class="tspan-elem-mass" textContent="92.90637">92.90637</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Molybdenum">
+								<span class="tooltip t-transition">Molybdenum</span>
+								<ruby><rt class="tspan-elem-numb" textContent="42">42</rt><rb class="tspan-elem-abbr" textContent="Mo">Mo</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Molybdenum">Molybdenum</strong>
+								<tt class="tspan-elem-mass" textContent="95.95">95.95</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Technetium">
+								<span class="tooltip t-transition">Technetium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="43">43</rt><rb class="tspan-elem-abbr" textContent="Tc">Tc</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Technetium">Technetium</strong>
+								<tt class="tspan-elem-mass" textContent="(98)">(98)</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Ruthenium">
+								<span class="tooltip t-transition">Ruthenium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="44">44</rt><rb class="tspan-elem-abbr" textContent="Ru">Ru</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Ruthenium">Ruthenium</strong>
+								<tt class="tspan-elem-mass" textContent="101.07">101.07</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Rhodium">
+								<span class="tooltip t-transition">Rhodium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="45">45</rt><rb class="tspan-elem-abbr" textContent="Rh">Rh</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Rhodium">Rhodium</strong>
+								<tt class="tspan-elem-mass" textContent="102.90550">102.90550</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Palladium">
+								<span class="tooltip t-transition">Palladium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="46">46</rt><rb class="tspan-elem-abbr" textContent="Pd">Pd</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Palladium">Palladium</strong>
+								<tt class="tspan-elem-mass" textContent="106.42">106.42</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Silver">
+								<span class="tooltip t-transition">Argentium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="47">47</rt><rb class="tspan-elem-abbr" textContent="Ag">Ag</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Silver">Silver</strong>
+								<tt class="tspan-elem-mass" textContent="107.8682">107.8682</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Cadmium">
+								<span class="tooltip t-transition">Cadmium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="48">48</rt><rb class="tspan-elem-abbr" textContent="Cd">Cd</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Cadmium">Cadmium</strong>
+								<tt class="tspan-elem-mass" textContent="12.414">112.414</tt>
+							</a>
+						</td>
+						<td class="element poor">
+							<a class="on-hover" href="&wiki;Indium">
+								<span class="tooltip t-poor">Indium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="49">49</rt><rb class="tspan-elem-abbr" textContent="In">In</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Indium">Indium</strong>
+								<tt class="tspan-elem-mass" textContent="114.818">114.818</tt>
+							</a>
+						</td>
+						<td class="element poor">
+							<a class="on-hover" href="&wiki;Tin">
+								<span class="tooltip t-poor">Tin</span>
+								<ruby><rt class="tspan-elem-numb" textContent="50">50</rt><rb class="tspan-elem-abbr" textContent="Sn">Sn</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Tin">Tin</strong>
+								<tt class="tspan-elem-mass" textContent="118.710">118.710</tt>
+							</a>
+						</td>
+						<td class="element metalloid">
+							<a class="on-hover" href="&wiki;Antimony">
+								<span class="tooltip t-metalloid">Antimony</span>
+								<ruby><rt class="tspan-elem-numb" textContent="51">51</rt><rb class="tspan-elem-abbr" textContent="Sb">Sb</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Antimony">Antimony</strong>
+								<tt class="tspan-elem-mass" textContent="121.760">121.760</tt>
+							</a>
+						</td>
+						<td class="element metalloid">
+							<a class="on-hover" href="&wiki;Tellurium">
+								<span class="tooltip t-metalloid">Tellurium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="52">52</rt><rb class="tspan-elem-abbr" textContent="Te">Te</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Tellurium">Tellurium</strong>
+								<tt class="tspan-elem-mass" textContent="127.60">127.60</tt>
+							</a>
+						</td>
+						<td class="element halogen">
+							<a class="on-hover" href="&wiki;Iodine">
+								<span class="tooltip t-halogen">Iodine</span>
+								<ruby><rt class="tspan-elem-numb" textContent="53">53</rt><rb class="tspan-elem-abbr" textContent="I">I</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Iodine">Iodine</strong>
+								<tt class="tspan-elem-mass" textContent="126.90447">126.90447</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Xenon">
+								<span class="tooltip t-noble">Xenon</span>
+								<ruby><rt class="tspan-elem-numb" textContent="54">54</rt><rb class="tspan-elem-abbr" textContent="Xe">Xe</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Xenon">Xenon</strong>
+								<tt class="tspan-elem-mass" textContent="131.293">131.293</tt>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<th>6</th>
+						<td class="element alkali">
+							<a class="on-hover" href="&wiki;Caesium">
+								<span class="tooltip t-alkali">Caesium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="55">55</rt><rb class="tspan-elem-abbr" textContent="Cs">Cs</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Caesium">Caesium</strong>
+								<tt class="tspan-elem-mass" textContent="132.90545196">132.90545196</tt>
+							</a>
+						</td>
+						<td class="element alkaline">
+							<a class="on-hover" href="&wiki;Barium">
+								<span class="tooltip t-alkaline">Barium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="56">56</rt><rb class="tspan-elem-abbr" textContent="Ba">Ba</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Barium">Barium</strong>
+								<tt class="tspan-elem-mass" textContent="137.327">137.327</tt>
+							</a>
+						</td>
+						<td class="lanthanoid-td">
+							<div class="marquee-with-options">
+								<table>
+									<tr>
+										<td class="element lanthanoid">
+											<a class="on-hover" href="&wiki;Lanthanum">
+												<span class="m-tooltip">Lanthanum</span>
+												<ruby><rt class="tspan-elem-numb" textContent="57">57</rt><rb class="tspan-elem-abbr" textContent="La">La</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Lanthanum">Lanthanum</strong>
+												<tt class="tspan-elem-mass" textContent="138.90547">138.90547</tt>
+											</a>
+										</td>
+										<td class="element lanthanoid">
+											<a class="on-hover" href="&wiki;Cerium">
+												<span class="m-tooltip">Cerium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="58">58</rt><rb class="tspan-elem-abbr" textContent="Ce">Ce</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Cerium">Cerium</strong>
+												<tt class="tspan-elem-mass" textContent="140.116">140.116</tt>
+											</a>
+										</td>
+										<td class="element lanthanoid">
+											<a class="on-hover" href="&wiki;Praseodymium">
+												<span class="m-tooltip">Praseodymium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="59">59</rt><rb class="tspan-elem-abbr" textContent="Pr">Pr</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Praseodymium">Praseodymium</strong>
+												<tt class="tspan-elem-mass" textContent="140.90766">140.90766</tt>
+											</a>
+										</td>
+										<td class="element lanthanoid">
+											<a class="on-hover" href="&wiki;Neodymium">
+												<span class="m-tooltip">Neodymium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="60">60</rt><rb class="tspan-elem-abbr" textContent="Nd">Nd</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Neodymium">Neodymium</strong>
+												<tt class="tspan-elem-mass" textContent="144.242">144.242</tt>
+											</a>
+										</td>
+										<td class="element lanthanoid">
+											<a class="on-hover" href="&wiki;Promethium">
+												<span class="m-tooltip">Promethium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="61">61</rt><rb class="tspan-elem-abbr" textContent="Pm">Pm</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Promethium">Promethium</strong>
+												<tt class="tspan-elem-mass" textContent="(145)">(145)</tt>
+											</a>
+										</td>
+										<td class="element lanthanoid">
+											<a class="on-hover" href="&wiki;Samarium">
+												<span class="m-tooltip">Samarium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="62">62</rt><rb class="tspan-elem-abbr" textContent="Sm">Sm</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Samarium">Samarium</strong>
+												<tt class="tspan-elem-mass" textContent="150.36">150.36</tt>
+											</a>
+										</td>
+										<td class="element lanthanoid">
+											<a class="on-hover" href="&wiki;Europium">
+												<span class="m-tooltip">Europium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="63">63</rt><rb class="tspan-elem-abbr" textContent="Eu">Eu</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Europium">Europium</strong>
+												<tt class="tspan-elem-mass" textContent="151.964">151.964</tt>
+											</a>
+										</td>
+										<td class="element lanthanoid">
+											<a class="on-hover" href="&wiki;Gadolinium">
+												<span class="m-tooltip">Gadolinium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="64">64</rt><rb class="tspan-elem-abbr" textContent="Gd">Gd</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Gadolinium">Gadolinium</strong>
+												<tt class="tspan-elem-mass" textContent="157.25">157.25</tt>
+											</a>
+										</td>
+										<td class="element lanthanoid">
+											<a class="on-hover" href="&wiki;Terbium">
+												<span class="m-tooltip">Terbium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="65">65</rt><rb class="tspan-elem-abbr" textContent="Tb">Tb</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Terbium">Terbium</strong>
+												<tt class="tspan-elem-mass" textContent="158.92535">158.92535</tt>
+											</a>
+										</td>
+										<td class="element lanthanoid">
+											<a class="on-hover" href="&wiki;Dysprosium">
+												<span class="m-tooltip">Dysprosium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="66">66</rt><rb class="tspan-elem-abbr" textContent="Dy">Dy</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Dysprosium">Dysprosium</strong>
+												<tt class="tspan-elem-mass" textContent="162.500">162.500</tt>
+											</a>
+										</td>
+										<td class="element lanthanoid">
+											<a class="on-hover" href="&wiki;Holmium">
+												<span class="m-tooltip">Holmium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="67">67</rt><rb class="tspan-elem-abbr" textContent="Ho">Ho</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Holmium">Holmium</strong>
+												<tt class="tspan-elem-mass" textContent="164.93033">164.93033</tt>
+											</a>
+										</td>
+										<td class="element lanthanoid">
+											<a class="on-hover" href="&wiki;Erbium">
+												<span class="m-tooltip">Erbium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="68">68</rt><rb class="tspan-elem-abbr" textContent="Er">Er</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Erbium">Erbium</strong>
+												<tt class="tspan-elem-mass" textContent="167.259">167.259</tt>
+											</a>
+										</td>
+										<td class="element lanthanoid">
+											<a class="on-hover" href="&wiki;Thulium">
+												<span class="m-tooltip">Thulium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="69">69</rt><rb class="tspan-elem-abbr" textContent="Tm">Tm</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Thulium">Thulium</strong>
+												<tt class="tspan-elem-mass" textContent="168.93422">168.93422</tt>
+											</a>
+										</td>
+										<td class="element lanthanoid">
+											<a class="on-hover" href="&wiki;Ytterbium">
+												<span class="m-tooltip">Ytterbium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="70">70</rt><rb class="tspan-elem-abbr" textContent="Yb">Yb</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Ytterbium">Ytterbium</strong>
+												<tt class="tspan-elem-mass" textContent="173.054">173.054</tt>
+											</a>
+										</td>
+										<td class="element lanthanoid">
+											<a class="on-hover" href="&wiki;Lutetium">
+												<span class="m-tooltip">Lutetium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="71">71</rt><rb class="tspan-elem-abbr" textContent="Lu">Lu</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Lutetium">Lutetium</strong>
+												<tt class="tspan-elem-mass" textContent="174.9668">174.9668</tt>
+											</a>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Hafnium">
+								<span class="tooltip t-transition">Hafnium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="72">72</rt><rb class="tspan-elem-abbr" textContent="Hf">Hf</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Hafnium">Hafnium</strong>
+								<tt class="tspan-elem-mass" textContent="178.49">178.49</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Tantalum">
+								<span class="tooltip t-transition">Tantalum</span>
+								<ruby><rt class="tspan-elem-numb" textContent="73">73</rt><rb class="tspan-elem-abbr" textContent="Ta">Ta</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Tantalum">Tantalum</strong>
+								<tt class="tspan-elem-mass" textContent="180.94788">180.94788</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Tungsten">
+								<span class="tooltip t-transition">Tungsten</span>
+								<ruby><rt class="tspan-elem-numb" textContent="74">74</rt><rb class="tspan-elem-abbr" textContent="W">W</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Tungsten">Tungsten</strong>
+								<tt class="tspan-elem-mass" textContent="183.84">183.84</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Rhenium">
+								<span class="tooltip t-transition">Rhenium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="75">75</rt><rb class="tspan-elem-abbr" textContent="Re">Re</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Rhenium">Rhenium</strong>
+								<tt class="tspan-elem-mass" textContent="186.207">186.207</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Osmium">
+								<span class="tooltip t-transition">Osmium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="76">76</rt><rb class="tspan-elem-abbr" textContent="Os">Os</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Osmium">Osmium</strong>
+								<tt class="tspan-elem-mass" textContent="190.23">190.23</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Iridium">
+								<span class="tooltip t-transition">Iridium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="77">77</rt><rb class="tspan-elem-abbr" textContent="Ir">Ir</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Iridium">Iridium</strong>
+								<tt class="tspan-elem-mass" textContent="192.217">192.217</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Platinum">
+								<span class="tooltip t-transition">Platinum</span>
+								<ruby><rt class="tspan-elem-numb" textContent="78">78</rt><rb class="tspan-elem-abbr" textContent="Pt">Pt</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Platinum">Platinum</strong>
+								<tt class="tspan-elem-mass" textContent="195.084">195.084</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Gold">
+								<span class="tooltip t-transition">Aurum</span>
+								<ruby><rt class="tspan-elem-numb" textContent="79">79</rt><rb class="tspan-elem-abbr" textContent="Au">Au</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Gold">Gold</strong>
+								<tt class="tspan-elem-mass" textContent="196.966569">196.966569</tt>
+							</a>
+						</td>
+						<td class="element transition">
+							<a class="on-hover" href="&wiki;Mercury%20(element)">
+								<span class="tooltip t-transition">Mercury</span>
+								<ruby><rt class="tspan-elem-numb" textContent="80">80</rt><rb class="tspan-elem-abbr" textContent="Hg">Hg</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Mercury">Mercury</strong>
+								<tt class="tspan-elem-mass" textContent="200.59">200.59</tt>
+							</a>
+						</td>
+						<td class="element poor">
+							<a class="on-hover" href="&wiki;Thallium">
+								<span class="tooltip t-poor">Thallium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="81">81</rt><rb class="tspan-elem-abbr" textContent="Tl">Tl</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Thallium">Thallium</strong>
+								<tt class="tspan-elem-mass" textContent="204.38">204.38</tt>
+							</a>
+						</td>
+						<td class="element poor">
+							<a class="on-hover" href="&wiki;Lead">
+								<span class="tooltip t-poor">Lead</span>
+								<ruby><rt class="tspan-elem-numb" textContent="82">82</rt><rb class="tspan-elem-abbr" textContent="Pb">Pb</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Lead">Lead</strong>
+								<tt class="tspan-elem-mass" textContent="207.2">207.2</tt>
+							</a>
+						</td>
+						<td class="element poor">
+							<a class="on-hover" href="&wiki;Bismuth">
+								<span class="tooltip t-poor">Bismuth</span>
+								<ruby><rt class="tspan-elem-numb" textContent="83">83</rt><rb class="tspan-elem-abbr" textContent="Be">Be</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Bismuth">Bismuth</strong>
+								<tt class="tspan-elem-mass" textContent="208.98040">208.98040</tt>
+							</a>
+						</td>
+						<td class="element metalloid">
+							<a class="on-hover" href="&wiki;Polonium">
+								<span class="tooltip t-metalloid">Polonium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="84">84</rt><rb class="tspan-elem-abbr" textContent="Po">Po</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Polonium">Polonium</strong>
+								<tt class="tspan-elem-mass" textContent="(209)">(209)</tt>
+							</a>
+						</td>
+						<td class="element halogen">
+							<a class="on-hover" href="&wiki;Astatine">
+								<span class="tooltip t-halogen">Astatine</span>
+								<ruby><rt class="tspan-elem-numb" textContent="85">85</rt><rb class="tspan-elem-abbr" textContent="At">At</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Astatine">Astatine</strong>
+								<tt class="tspan-elem-mass" textContent="(210)">(210)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Radon">
+								<span class="tooltip t-noble">Radon</span>
+								<ruby><rt class="tspan-elem-numb" textContent="86">86</rt><rb class="tspan-elem-abbr" textContent="Rn">Rn</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Radon">Radon</strong>
+								<tt class="tspan-elem-mass" textContent="(222)">(222)</tt>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<th>7</th>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Francium">
+								<span class="tooltip t-noble">Francium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="87">87</rt><rb class="tspan-elem-abbr" textContent="Fr">Fr</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Francium">Francium</strong>
+								<tt class="tspan-elem-mass" textContent="(223)">(223)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Radium">
+								<span class="tooltip t-noble">Radium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="88">88</rt><rb class="tspan-elem-abbr" textContent="Ra">Ra</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Radium">Radium</strong>
+								<tt class="tspan-elem-mass" textContent="(226)">(226)</tt>
+							</a>
+						</td>
+						<td class="actinoid-td">
+							<div class="marquee-with-options">
+								<table>
+									<tr>
+										<td class="element actinoid">
+											<a class="on-hover" href="&wiki;Actinium">
+												<span class="m-tooltip">Actinium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="89">89</rt><rb class="tspan-elem-abbr" textContent="Ac">Ac</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Actinium">Actinium</strong>
+												<tt class="tspan-elem-mass" textContent="(227)">(227)</tt>
+											</a>
+										</td>
+										<td class="element actinoid">
+											<a class="on-hover" href="&wiki;Thorium">
+												<span class="m-tooltip">Thorium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="90">90</rt><rb class="tspan-elem-abbr" textContent="Th">Th</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Thorium">Thorium</strong>
+												<tt class="tspan-elem-mass" textContent="232.0377">232.0377</tt>
+											</a>
+										</td>
+										<td class="element actinoid">
+											<a class="on-hover" href="&wiki;Protactinium">
+												<span class="m-tooltip">Protactinium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="91">91</rt><rb class="tspan-elem-abbr" textContent="Pa">Pa</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Protactinium">Protactinium</strong>
+												<tt class="tspan-elem-mass" textContent="231.03588">231.03588</tt>
+											</a>
+										</td>
+										<td class="element actinoid">
+											<a class="on-hover" href="&wiki;Uranium">
+												<span class="m-tooltip">Uranium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="92">92</rt><rb class="tspan-elem-abbr" textContent="U">U</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Uranium">Uranium</strong>
+												<tt class="tspan-elem-mass" textContent="238.02891">238.02891</tt>
+											</a>
+										</td>
+										<td class="element actinoid">
+											<a class="on-hover" href="&wiki;Neptunium">
+												<span class="m-tooltip">Neptunium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="93">93</rt><rb class="tspan-elem-abbr" textContent="Np">Np</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Neptunium">Neptunium</strong>
+												<tt class="tspan-elem-mass" textContent="(237)">(237)</tt>
+											</a>
+										</td>
+										<td class="element actinoid">
+											<a class="on-hover" href="&wiki;Plutonium">
+												<span class="m-tooltip">Plutonium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="94">94</rt><rb class="tspan-elem-abbr" textContent="Pu">Pu</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Plutonium">Plutonium</strong>
+												<tt class="tspan-elem-mass" textContent="(244)">(244)</tt>
+											</a>
+										</td>
+										<td class="element actinoid">
+											<a class="on-hover" href="&wiki;Americium">
+												<span class="m-tooltip">Americium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="95">95</rt><rb class="tspan-elem-abbr" textContent="Am">Am</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Americium">Americium</strong>
+												<tt class="tspan-elem-mass" textContent="(243)">(243)</tt>
+											</a>
+										</td>
+										<td class="element actinoid">
+											<a class="on-hover" href="&wiki;Curium">
+												<span class="m-tooltip">Curium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="96">96</rt><rb class="tspan-elem-abbr" textContent="Cm">Cm</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Curium">Curium</strong>
+												<tt class="tspan-elem-mass" textContent="(247)">(247)</tt>
+											</a>
+										</td>
+										<td class="element actinoid">
+											<a class="on-hover" href="&wiki;Berkelium">
+												<span class="m-tooltip">Berkelium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="97">97</rt><rb class="tspan-elem-abbr" textContent="Bk">Bk</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Berkelium">Berkelium</strong>
+												<tt class="tspan-elem-mass" textContent="(247)">(247)</tt>
+											</a>
+										</td>
+										<td class="element actinoid">
+											<a class="on-hover" href="&wiki;Californium">
+												<span class="m-tooltip">Californium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="98">98</rt><rb class="tspan-elem-abbr" textContent="Cf">Cf</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Californium">Californium</strong>
+												<tt class="tspan-elem-mass" textContent="(251)">(251)</tt>
+											</a>
+										</td>
+										<td class="element actinoid">
+											<a class="on-hover" href="&wiki;Einsteinium">
+												<span class="m-tooltip">Einsteinium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="99">99</rt><rb class="tspan-elem-abbr" textContent="Es">Es</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Einsteinium">Einsteinium</strong>
+												<tt class="tspan-elem-mass" textContent="(252)">(252)</tt>
+											</a>
+										</td>
+										<td class="element actinoid">
+											<a class="on-hover" href="&wiki;Fermium">
+												<span class="m-tooltip">Fermium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="100">100</rt><rb class="tspan-elem-abbr" textContent="Fm">Fm</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Fermium">Fermium</strong>
+												<tt class="tspan-elem-mass" textContent="(257)">(257)</tt>
+											</a>
+										</td>
+										<td class="element actinoid">
+											<a class="on-hover" href="&wiki;Mendelevium">
+												<span class="m-tooltip">Mendelevium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="101">101</rt><rb class="tspan-elem-abbr" textContent="Md">Md</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Mendelevium">Mendelevium</strong>
+												<tt class="tspan-elem-mass" textContent="(258)">(258)</tt>
+											</a>
+										</td>
+										<td class="element actinoid">
+											<a class="on-hover" href="&wiki;Nobelium">
+												<span class="m-tooltip">Nobelium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="102">102</rt><rb class="tspan-elem-abbr" textContent="No">No</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Nobelium">Nobelium</strong>
+												<tt class="tspan-elem-mass" textContent="(259)">(259)</tt>
+											</a>
+										</td>
+										<td class="element actinoid">
+											<a class="on-hover" href="&wiki;Lawrencium">
+												<span class="m-tooltip">Lawrencium</span>
+												<ruby><rt class="tspan-elem-numb" textContent="103">103</rt><rb class="tspan-elem-abbr" textContent="Lr">Lr</rb></ruby>
+												<strong class="tspan-elem-name" textContent="Lawrencium">Lawrencium</strong>
+												<tt class="tspan-elem-mass" textContent="(262)">(262)</tt>
+											</a>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Rutherfordium">
+								<span class="tooltip t-noble">Rutherfordium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="104">104</rt><rb class="tspan-elem-abbr" textContent="Rf">Rf</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Rutherfordium">Rutherfordium</strong>
+								<tt class="tspan-elem-mass" textContent="(267)">(267)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Dubnium">
+								<span class="tooltip t-noble">Dubnium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="105">105</rt><rb class="tspan-elem-abbr" textContent="Db">Db</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Dubnium">Dubnium</strong>
+								<tt class="tspan-elem-mass" textContent="(268)">(268)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Seaborgium">
+								<span class="tooltip t-noble">Seaborgium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="106">106</rt><rb class="tspan-elem-abbr" textContent="Sg">Sg</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Seaborgium">Seaborgium</strong>
+								<tt class="tspan-elem-mass" textContent="(271)">(271)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Bohrium">
+								<span class="tooltip t-noble">Bohrium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="107">107</rt><rb class="tspan-elem-abbr" textContent="Bh">Bh</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Bohrium">Bohrium</strong>
+								<tt class="tspan-elem-mass" textContent="(272)">(272)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Hassium">
+								<span class="tooltip t-noble">Hassium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="108">108</rt><rb class="tspan-elem-abbr" textContent="Hs">Hs</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Hassium">Hassium</strong>
+								<tt class="tspan-elem-mass" textContent="(270)">(270)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Meitnerium">
+								<span class="tooltip t-noble">Meitnerium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="109">109</rt><rb class="tspan-elem-abbr" textContent="Mt">Mt</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Meitnerium">Meitnerium</strong>
+								<tt class="tspan-elem-mass" textContent="(276)">(276)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Darmstadtium">
+								<span class="tooltip t-noble">Darmstadtium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="110">110</rt><rb class="tspan-elem-abbr" textContent="Ds">Ds</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Darmstadtium">Darmstadtium</strong>
+								<tt class="tspan-elem-mass" textContent="(281)">(281)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Roentgenium">
+								<span class="tooltip t-noble">Roentgenium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="111">111</rt><rb class="tspan-elem-abbr" textContent="Rg">Rg</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Roentgenium">Roentgenium</strong>
+								<tt class="tspan-elem-mass" textContent="(280)">(280)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Copernicium">
+								<span class="tooltip t-noble">Copernicium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="112">112</rt><rb class="tspan-elem-abbr" textContent="Cn">Cn</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Copernicium">Copernicium</strong>
+								<tt class="tspan-elem-mass" textContent="(285)">(285)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Nihonium">
+								<span class="tooltip t-noble">Nihonium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="113">113</rt><rb class="tspan-elem-abbr" textContent="Nh">Nh</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Nihonium">Nihonium</strong>
+								<tt class="tspan-elem-mass" textContent="(284)">(284)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Flerovium">
+								<span class="tooltip t-noble">Flerovium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="114">114</rt><rb class="tspan-elem-abbr" textContent="Fl">Fl</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Flerovium">Flerovium</strong>
+								<tt class="tspan-elem-mass" textContent="(289)">(289)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Moscovium">
+								<span class="tooltip t-noble">Moscovium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="115">115</rt><rb class="tspan-elem-abbr" textContent="Mc">Mc</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Moscovium">Moscovium</strong>
+								<tt class="tspan-elem-mass" textContent="(288)">(288)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Livermorium">
+								<span class="tooltip t-noble">Livermorium</span>
+								<ruby><rt class="tspan-elem-numb" textContent="116">116</rt><rb class="tspan-elem-abbr" textContent="Lv">Lv</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Livermorium">Livermorium</strong>
+								<tt class="tspan-elem-mass" textContent="(293)">(293)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Tennessine">
+								<span class="tooltip t-noble">Tennessine</span>
+								<ruby><rt class="tspan-elem-numb" textContent="117">117</rt><rb class="tspan-elem-abbr" textContent="Ts">Ts</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Tennessine">Tennessine</strong>
+								<tt class="tspan-elem-mass" textContent="(294)">(294)</tt>
+							</a>
+						</td>
+						<td class="element noble">
+							<a class="on-hover" href="&wiki;Oganesson">
+								<span class="tooltip t-noble">Oganesson</span>
+								<ruby><rt class="tspan-elem-numb" textContent="118">118</rt><rb class="tspan-elem-abbr" textContent="Og">Og</rb></ruby>
+								<strong class="tspan-elem-name" textContent="Oganesson">Oganesson</strong>
+								<tt class="tspan-elem-mass" textContent="(294)">(294)</tt>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br />
+			<table class="elem-types-tbl">
+				<tr>
+					<td class="elem-resize-btn" id="alkali"><a href="https://www.google.am" path=""><p>Alkali Metal</p></a></td>
+					<td class="elem-resize-btn" id="alkaline"><a href="https://www.google.am" path="https://www.google.am"><p>Alkaline Earth</p></a></td>
+					<td class="elem-resize-btn" id="transition"><a href="https://www.google.am" path=""><p>Transition Metal</p></a></td>
+					<td class="elem-resize-btn" id="poor"><a href="https://www.google.am" path=""><p>Basic Metal</p></a></td>
+					<td class="elem-resize-btn" id="metalloid"><a href="" path=""><p>Semimetal</p></a></td>
+					<td class="elem-resize-btn" id="nonmetal"><a href="" path=""><p>Nonmetal</p></a></td>
+					<td class="elem-resize-btn" id="halogen"><a href="" path=""><p>Halogen</p></a></td>
+					<td class="elem-resize-btn" id="noble"><a href="" path=""><p>Noble Gas</p></a></td>
+					<td class="elem-resize-btn" id="lanthanoid"><a href="" path=""><p>Lanthanide</p></a></td>
+					<td class="elem-resize-btn" id="actinoid"><a href="" path=""><p>Actinide</p></a></td>
+				</tr>
+			</table>
+		</div>
+	</main>
+</body>
+</html>

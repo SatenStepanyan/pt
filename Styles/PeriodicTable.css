@@ -1,0 +1,516 @@
+﻿@media screen and (min-width: 5500px ) {
+	th, td, th samp, a p, a ruby rb, a ruby rt, a strong, a tt {
+		font-size: 5px;
+	}
+}
+@font-face {
+	font-family: roboto-bold;
+	src: url(../Fonts/Roboto-Bold.ttf);
+}
+@font-face {
+	font-family: roboto-regular;
+	src: url(../Fonts/Roboto-Regular.ttf);
+}
+@font-face {
+	font-family: roboto-thin;
+	src: url(../Fonts/Roboto-Thin.ttf);
+}
+* {
+	padding: 0;
+	margin: 0;
+
+	box-sizing: border-box;
+	/*box-shadow: 0 0 0 1px red inset;*/
+}
+html, body, main {
+	height: 100%;
+	width: 100%;
+}
+body {
+	font-family: roboto-regular;
+
+	display: table;
+}
+main {
+
+	vertical-align: middle;
+
+	display: table-cell;
+}
+table {
+	width: 1140px;
+
+	margin: auto;
+}
+caption {
+	font-family: roboto-bold;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 28px;
+	text-transform: uppercase;
+	color: #5f5e5e;
+
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, .2)));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+th, td {
+	height: 60px;
+	width: 60px;
+
+	text-align: center;
+
+	padding: 5px;
+	box-sizing: border-box;
+}
+th {
+	font-size: 12px;
+	font-family: roboto-regular;
+}
+small {
+	height: 50px;
+	width: 100%;
+
+	display: table;
+	vertical-align: top;
+}
+samp {
+	height: 33%;
+
+	font-size: 9px;
+	font-family: roboto-thin;
+
+	display: block;
+}
+a {
+	height: 60px;
+	width: 60px;
+
+	display: table;
+
+	margin: auto;
+
+	cursor: pointer;
+}
+ruby {
+	width: 50px;
+
+	font-size: 16px;
+	font-weight: bold;
+
+	display: table-header-group;
+}
+rb {
+	font-size: 17px;
+	font-family: roboto-bold;
+}
+rt {
+	position: relative;
+	opacity: 2;
+
+	line-height: 1;
+	font-size: 9px;
+	font-weight: normal;
+
+	text-align: left;
+
+	display: block;
+
+	padding-left: 2px;
+}
+strong, tt {
+	width: 55px;
+
+	line-height: 1.3;
+	font-size: 8.5px;
+	font-style: normal;
+	text-overflow: ellipsis;
+
+	display: block;
+	overflow: hidden;
+
+	margin: auto;
+}
+.elem-cont-td {
+	position: relative;
+}
+a #elem-cont {
+	display: none;
+}
+a:hover #elem-cont {
+	display: block;
+}
+.marquee-with-options {
+	height: 60px;
+	width: 60px; /* the plugin works for responsive layouts so width is not necessary */
+	overflow: hidden;
+	border: none;
+}
+.lanthanoid a {
+	padding-bottom: 2px;
+}
+.lanthanoid-td {
+	box-shadow: 0 0 5px #bbb1d6;
+}
+.actinoid-td {
+	box-shadow: 0 0 5px #bf80b5;
+}
+.js-marquee {
+	height: 60px;
+}
+.js-marquee table {
+	height: 60px;
+}
+.js-marquee td {
+	padding: 0;
+}
+.elem-numb, .elem-abbr, .elem-name, .elem-mass {
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-name: text;
+	animation-play-state: running;
+
+	stroke: grey;
+	stroke-dasharray: 800px;
+	stroke-dashoffset: 0;
+	stroke-width: .3px;
+
+	fill: transparent;
+	text-anchor: middle;
+
+	opacity: 1;
+}
+.elem-numb {
+	text-anchor: end;
+}
+.elem-numb, .elem-mass {
+	font-size: 10px;
+}
+.elem-name, .elem-abbr {
+	font-size: 30px;
+}
+.elem-types-tbl td {
+	height: 40px;
+	width: 80px;
+
+	color: #5f5e5e;
+	font-family: roboto-bold;
+}
+.elem-types-tbl a {
+	height: 100%;
+	width: 100%;
+
+	font-size: 13px;
+
+	display: table;
+	vertical-align: middle;
+}
+.elem-types-tbl p {
+	display: table-cell;
+	vertical-align: middle;
+}
+.on-hover {
+	position: relative;
+	
+	color: #5f5e5e;
+	text-decoration: none;
+
+	border-radius: 3px;
+}
+.nonmetal:hover, .alkali:hover, .alkaline:hover, .transition:hover, .metalloid:hover, .poor:hover, .halogen:hover, .noble:hover {
+	box-shadow: 0 0 15px #5f5e5e;
+	opacity: 1;
+	transition: .7s;
+}
+.nonmetal, #nonmetal {
+	box-shadow: 0 0 5px #afd790;
+	transition: .7s;
+}
+.alkali, #alkali {
+	position: relative;
+	box-shadow: 0 0 5px #f6aa76;
+}
+.alkaline, #alkaline {
+	box-shadow: 0 0 5px #cdc000;
+}
+.transition, #transition {
+	box-shadow: 0 0 5px #59c7c8;
+}
+.metalloid, #metalloid {
+	box-shadow: 0 0 5px #f67d72;
+}
+.poor, #poor {
+	box-shadow: 0 0 5px #65c498;
+}
+.halogen, #halogen {
+	box-shadow: 0 0 5px #c56c1a;
+}
+.noble, #noble {
+	box-shadow: 0 0 5px #608dc8;
+}
+#lanthanoid {
+	box-shadow: 0 0 5px #846fb2;
+}
+#actinoid {
+	box-shadow: 0 0 5px #bf80b5;
+}
+.lanthanoid, #lanthanoid a, #lanthanoid:hover {
+	background-image: -webkit-linear-gradient(135deg, #fff, #846fb2);
+}
+.actinoid, #actinoid a, #actinoid:hover {
+	background-image: -webkit-linear-gradient(135deg, #fff, #bf80b5);
+}
+.nonmetal .on-hover, #nonmetal a, #nonmetal:hover {
+	background-image: -webkit-linear-gradient(135deg, #fff, #afd790);
+}
+.alkali .on-hover, #alkali a, #alkali:hover {
+	background-image: -webkit-linear-gradient(135deg, #fff, #f6aa76);
+}
+.alkaline .on-hover, #alkaline a, #alkaline:hover {
+	background-image: -webkit-linear-gradient(135deg, #fff, #cdc000);
+}
+.transition .on-hover, #transition a, #transition:hover {
+	background-image: -webkit-linear-gradient(135deg, #fff, #59c7c8);
+}
+.metalloid .on-hover, #metalloid a, #metalloid:hover {
+	background-image: -webkit-linear-gradient(135deg, #fff, #f67d72);
+}
+.poor .on-hover, #poor a, #poor:hover {
+	background-image: -webkit-linear-gradient(135deg, #fff, #65c498);
+}
+.halogen .on-hover, #halogen a, #halogen:hover {
+	background-image: -webkit-linear-gradient(135deg, #fff, #c56c1a);
+}
+.noble .on-hover, #noble a, #noble:hover {
+	background-image: -webkit-linear-gradient(135deg, #fff, #608dc8);
+}
+#lanthanoid:hover, #actinoid:hover, #nonmetal:hover, #alkali:hover, #alkaline:hover, #transition:hover, #metalloid:hover, #poor:hover, #halogen:hover, #noble:hover {
+	box-shadow: none;
+	transition: .7s;
+}
+.nonmetal .on-hover:before, .alkali .on-hover:before, .alkaline .on-hover:before, .transition .on-hover:before, .metalloid .on-hover:before, .poor .on-hover:before, .halogen .on-hover:before, .noble .on-hover:before {
+	width: 0;
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	content: "";
+	
+	border-style: solid;
+	border-width: 0 16px 16px 0;
+
+	-moz-border-radius: 0 0 0 5px;
+	border-radius: 0 0 0 5px;
+
+	-webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0, 0, 0, .2);
+	-moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0, 0, 0, .2);
+	box-shadow: -1px 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0, 0, 0, .2);
+	/* Firefox 3.0 damage limitation */
+	display: block; width: 0;
+}
+.nonmetal .on-hover:before {
+	border-color: #d6f3c0 #fff;
+}
+.alkali .on-hover:before {
+	border-color: #eccab2 #fff;
+}
+.alkaline .on-hover:before {
+	border-color: #bdb981 #fff;
+}
+.transition .on-hover:before {
+	border-color: #a4d9da #fff;
+}
+.metalloid .on-hover:before {
+	border-color: #f9c7c3 #fff;
+}
+.poor .on-hover:before {
+	border-color: #a4e8c9 #fff;
+}
+.halogen .on-hover:before {
+	border-color: #efcbaa #fff;
+}
+.noble .on-hover:before {
+	border-color: #c1d4ec #fff;
+}
+#elem-cont {
+	height: 120px;
+	width: 70%;
+	
+	background: #fff;
+	margin: auto;
+}
+.shadow-effect
+{
+	position: relative;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 40px rgba(0, 0, 0, .1) inset;
+}
+.shadow-effect:before, .shadow-effect:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+	top: 0;
+	bottom: 0;
+	left: 10px;
+	right: 10px;
+	border-radius: 100px / 10px;
+}
+.shadow-effect:after {
+	right: 10px;
+	left: auto;
+	transform: skew(8deg) rotate(3deg);
+}
+.element a {
+	transition: .7s;
+}
+.toggle-zoomout a {
+	opacity: .4;
+	transform: scale(.8);
+	transition: .7s;
+}
+.toggle-zoomin a {
+	transform: scale(1.1);
+	transition: .7s;
+	-webkit-filter: contrast(1.2);
+}
+.elem-resize-btn a {
+	color: #5f5e5e;
+	text-decoration: none;
+}
+.on-hover .tooltip {
+	height: 30px;
+	width: 100px;
+
+	position: absolute;
+	z-index: 5;
+	top: 110%;
+	left: 50%;
+
+	color: #000;
+	text-align: center;
+	line-height: 30px;
+	font-family: roboto-thin;
+	font-size: 14.5px;
+	font-weight: bold;
+
+	visibility: hidden;
+	opacity: .95;
+
+	border-radius: 3px;
+	
+	transform: translate(-50%);
+}
+.on-hover .tooltip::after {
+	position: absolute;
+	left: 5%;
+	bottom: 100%;
+	content: "";
+	border-width: 5px;
+	border-style: solid;
+}
+.on-hover:hover .tooltip {
+	visibility: visible;
+
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	animation-name: vanish;
+}
+.on-hover .m-tooltip {
+	height: 30px;
+	width: 100px;
+
+	position: absolute;
+	z-index: 1;
+	top: 40%;
+	left: 50%;
+
+	color: #000;
+	text-align: center;
+	line-height: 30px;
+	font-family: roboto-thin;
+	font-size: 14.5px;
+	font-weight: bold;
+
+	visibility: hidden;
+	opacity: .95;
+
+	border-radius: 3px;
+	
+	transform: translate(-50%);
+}
+.on-hover .t-nonmetal {
+	background-color: #a0d07c;
+}
+.on-hover .t-nonmetal::after {
+	border-color: transparent transparent #a0d07c transparent;
+}
+.on-hover .t-alkali {
+	background-color: #f6aa76;
+}
+.on-hover .t-alkali::after {
+	border-color: transparent transparent #f6aa76 transparent;
+}
+.on-hover .t-alkaline {
+	background-color: #cdc000;
+}
+.on-hover .t-alkaline::after {
+	border-color: transparent transparent #cdc000 transparent;
+}
+.on-hover .t-transition {
+	background-color: #53c4c6;
+}
+.on-hover .t-transition::after {
+	border-color: transparent transparent #53c4c6 transparent;
+}
+.on-hover .t-metalloid {
+	background-color: #f67a6f;
+}
+.on-hover .t-metalloid::after {
+	border-color: transparent transparent #f67a6f transparent;
+}
+.on-hover .t-poor {
+	background-color: #59c090;
+}
+.on-hover .t-poor::after {
+	border-color: transparent transparent #59c090 transparent;
+}
+.on-hover .t-halogen {
+	background-color: #cb701a;
+}
+.on-hover .t-halogen::after {
+	border-color: transparent transparent #cb701a transparent;
+}
+.on-hover .t-noble {
+	background-color: #6792cb;
+}
+.on-hover .t-noble::after {
+	border-color: transparent transparent #6792cb transparent;
+}
+@keyframes text {
+	0% {
+		stroke-dashoffset: 800;
+	}
+	50% {
+		fill: #5f5e5e;
+		stroke-dashoffset: 400;
+	}
+	100% {
+		fill: #5f5e5e;
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes vanish {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+		transform: translateX(15px) scale(1.1);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0) scale(1);
+	}
+}
